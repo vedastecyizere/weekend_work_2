@@ -1,8 +1,9 @@
 # Complete the method called split_array, which two parameters, the first being an array, and the second being an integer. The method will then create an array of other arrays, each one being the size of the indicated by the second parameter. See the driver code for examples.
 
 def split_array(array, array_size)
-
-end
+  sub_arrays = array.each_slice(array_size).to_a 
+  return sub_arrays 
+end 
 
 # Driver code - don't touch anything below this line.
 puts "TESTING split_array..."

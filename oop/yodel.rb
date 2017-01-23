@@ -10,6 +10,24 @@
 
 class Yodel
 
+  attr_accessor :segment, :count, :articulate
+
+  def initialize(multiply)
+    @segment = multiply[:segment]
+    @count = multiply[:count]
+  end 
+
+  def segment
+    return @segment
+  end 
+
+  def count 
+    return @count 
+  end 
+
+  def articulate 
+    return @segment * @count
+  end  
 end
 
 
